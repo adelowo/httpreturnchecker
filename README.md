@@ -3,6 +3,10 @@
 `httpreturnchecker` is a static analysis tool that checks if you forget to
 correctly use a `return` after writing to the `w` variable - `http.ResponseWriter`
 
+Why this?
+
+Read this article <http://lanre.wtf/blog/2024/08/25/http-handler-errors-golang>
+
 ## Install
 
 ```sh
