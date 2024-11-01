@@ -15,7 +15,17 @@ go install github.com/adelowo/httpreturnchecker
 
 ```sh
 go vet -vettool=$(which httpreturnchecker) path/to/file.go
+
 ```
+
+### Notices
+
+It only handles scenarios like this:
+
+- `fmt.Fprint` family of functions
+- `io.Copy`
+- `w.Write()`
+- `render.Render` using github.com/go-chi/render
 
 ### Example
 
